@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    
+    <link rel="stylesheet" href="/CSS/form.css">
+</head>
+<body>
+
+    <form class="form-container">
+        <h1>Application Form</h1>
+
+        <!-- SECTION A -->
+        <div class="section-header">A. General Questions</div>
+        <div class="section-content">
+            <div class="form-group full-width">
+                <label for="insured-name">Proposed Insured's Name:</label>
+                <input type="text" id="insured-name" name="insured_name" class="line-input" autocomplete="name">
+                <span class="subtext">(Please use capital letters)</span>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="birth-date">Birth Date:</label>
+                    <input type="date" id="birth-date" name="birth_date" class="line-input short-input">
+                </div>
+                <fieldset class="form-group flex-row section-group">
+                    <legend>Gender:</legend>
+                    <label class="radio-label"><input type="radio" name="gender" value="male"> Male</label>
+                    <label class="radio-label"><input type="radio" name="gender" value="female"> Female</label>
+                </fieldset>
+            </div>
+
+            <div class="form-group full-width">
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" class="line-input" autocomplete="street-address">
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" class="line-input" autocomplete="tel">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" class="line-input" autocomplete="email">
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="id-number">ID Number:</label>
+                    <input type="text" id="id-number" name="id_number" class="line-input">
+                </div>
+                <div class="form-group">
+                    <label for="ssn">Social Security Number:</label>
+                    <input type="text" id="ssn" name="ssn" class="line-input" placeholder="XXX-XX-XXXX">
+                </div>
+            </div>
+
+            <fieldset class="form-group flex-row full-width section-group">
+                <legend>Status:</legend>
+                <label class="radio-label"><input type="radio" name="status" value="single"> Single</label>
+                <label class="radio-label"><input type="radio" name="status" value="married"> Married</label>
+                <label class="radio-label"><input type="radio" name="status" value="divorced"> Divorced</label>
+                <label class="radio-label"><input type="radio" name="status" value="others"> Others</label>
+            </fieldset>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="occupation">Occupation:</label>
+                    <input type="text" id="occupation" name="occupation" class="line-input">
+                </div>
+                <fieldset class="form-group flex-row section-group">
+                    <legend>Are you a retiree?</legend>
+                    <label class="radio-label"><input type="radio" name="retiree" value="yes"> Yes</label>
+                    <label class="radio-label"><input type="radio" name="retiree" value="no"> No</label>
+                </fieldset>
+            </div>
+        </div>
+
+        <!-- SECTION B -->
+        <div class="section-header">B. Type of Health Coverage</div>
+        <div class="section-content">
+            <div class="coverage-grid">
+
+                <fieldset class="coverage-box section-group">
+                    <legend>Employee</legend>
+                    <div class="row">
+                        <label class="radio-label"><input type="radio" name="emp_coverage" value="yes"> Yes</label>
+                        <label class="radio-label"><input type="radio" name="emp_coverage" value="no"> No</label>
+                    </div>
+                    <div class="row">
+                        <label for="emp-plan">Plan Choice:</label>
+                        <input type="text" id="emp-plan" name="emp_plan" class="plan-input">
+                    </div>
+                </fieldset>
+
+                <fieldset class="coverage-box section-group">
+                    <legend>Spouse</legend>
+                    <div class="row">
+                        <label class="radio-label"><input type="radio" name="spouse_coverage" value="yes"> Yes</label>
+                        <label class="radio-label"><input type="radio" name="spouse_coverage" value="no"> No</label>
+                    </div>
+                    <div class="row">
+                        <label for="spouse-plan">Plan Choice:</label>
+                        <input type="text" id="spouse-plan" name="spouse_plan" class="plan-input">
+                    </div>
+                </fieldset>
+
+                <fieldset class="coverage-box section-group">
+                    <legend>Children</legend>
+                    <div class="row">
+                        <label class="radio-label"><input type="radio" name="children_coverage" value="yes"> Yes</label>
+                        <label class="radio-label"><input type="radio" name="children_coverage" value="no"> No</label>
+                    </div>
+                    <div class="row">
+                        <label for="children-plan">Plan Choice:</label>
+                        <input type="text" id="children-plan" name="children_plan" class="plan-input">
+                    </div>
+                </fieldset>
+
+            </div>
+
+            <p class="table-caption">Complete If Spouse/Children are Proposed for Insurance:</p>
+            <table class="proposal-table">
+                <thead>
+                    <tr>
+                        <th style="width: 35%;">Name</th>
+                        <th style="width: 20%;">SSN No.</th>
+                        <th style="width: 20%;">Relationship to proposed insured</th>
+                        <th style="width: 10%;">Birth Date</th>
+                        <th style="width: 8%;">Age</th>
+                        <th style="width: 7%;">Sex</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" name="dep1_name" aria-label="Dependent 1 Name"></td>
+                        <td><input type="text" name="dep1_ssn" aria-label="Dependent 1 SSN"></td>
+                        <td><input type="text" name="dep1_rel" aria-label="Dependent 1 Relationship"></td>
+                        <td><input type="text" name="dep1_dob" placeholder="MM/DD/YY" aria-label="Dependent 1 Birth Date"></td>
+                        <td><input type="number" name="dep1_age" aria-label="Dependent 1 Age"></td>
+                        <td><input type="text" name="dep1_sex" aria-label="Dependent 1 Sex"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="dep2_name" aria-label="Dependent 2 Name"></td>
+                        <td><input type="text" name="dep2_ssn" aria-label="Dependent 2 SSN"></td>
+                        <td><input type="text" name="dep2_rel" aria-label="Dependent 2 Relationship"></td>
+                        <td><input type="text" name="dep2_dob" placeholder="MM/DD/YY" aria-label="Dependent 2 Birth Date"></td>
+                        <td><input type="number" name="dep2_age" aria-label="Dependent 2 Age"></td>
+                        <td><input type="text" name="dep2_sex" aria-label="Dependent 2 Sex"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" name="dep3_name" aria-label="Dependent 3 Name"></td>
+                        <td><input type="text" name="dep3_ssn" aria-label="Dependent 3 SSN"></td>
+                        <td><input type="text" name="dep3_rel" aria-label="Dependent 3 Relationship"></td>
+                        <td><input type="text" name="dep3_dob" placeholder="MM/DD/YY" aria-label="Dependent 3 Birth Date"></td>
+                        <td><input type="number" name="dep3_age" aria-label="Dependent 3 Age"></td>
+                        <td><input type="text" name="dep3_sex" aria-label="Dependent 3 Sex"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- SECTION C -->
+        <div class="section-header">C. The Policy</div>
+        <div class="section-content">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="policy-units">Units:</label>
+                    <input type="number" id="policy-units" name="policy_units" class="line-input">
+                </div>
+                <div class="form-group">
+                    <label for="annual-premium">Annual Premium:</label>
+                    <input type="text" id="annual-premium" name="annual_premium" class="line-input">
+                </div>
+            </div>
+
+            <fieldset class="form-group flex-row full-width section-group">
+                <legend>Payment Mode:</legend>
+                <label class="radio-label"><input type="radio" name="payment_mode" value="annual"> Annual</label>
+                <label class="radio-label"><input type="radio" name="payment_mode" value="semi-annual"> Semi-Annual</label>
+                <label class="radio-label"><input type="radio" name="payment_mode" value="monthly-pat"> Monthly PAT (complete PAT card)</label>
+            </fieldset>
+
+            <div class="form-group full-width">
+                <label for="cash-with-app">Cash with Application: $</label>
+                <input type="text" id="cash-with-app" name="cash_with_app" class="line-input">
+            </div>
+
+            <div class="form-group full-width">
+                <label for="planned-modal-premium">Planned modal premium: $</label>
+                <input type="text" id="planned-modal-premium" name="planned_modal_premium" class="line-input">
+            </div>
+
+            <div class="footer-row">
+                <div class="terms-box">
+                    <span class="terms-title">Terms & Conditions</span>
+                    <p>Improvement should be measured regularly and assessed in order for you to know what's beneficial and what is not. This will help you set new targets.</p>
+                </div>
+                <div class="signature-box">
+                    <label for="signature">Signature:</label>
+                    <div class="sig-line"></div>
+                    <div class="date-row">
+                        <label for="sig-date">Date:</label>
+                        <input type="date" id="sig-date" name="signature_date" class="line-input">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+</html>
