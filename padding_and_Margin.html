@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#f2f2f2;
+    font-family:Arial, sans-serif;
+    padding:50px;
+}
+
+.card{
+    width:350px;
+    background:beige;
+    border:2px solid black;
+    margin:0px;
+    padding:20px;
+    border-radius:10px;
+}
+
+h2{
+    margin-bottom:15px;
+}
+
+p{
+    margin-bottom:15px;
+}
+
+button{
+    background:green;
+    color:white;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding:10px 20px;
+    cursor:pointer;
+}
+
+#details{
+    display:none;
+    margin-top:20px;
+    border-top:1px solid gray;
+    padding-top:15px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<h2>🖥️ My Profile</h2>
+
+<p>
+Hello! My name is Suman.
+I have learned HTML, CSS, JavaScript, and React.
+</p>
+
+<button onclick="showDetails()">Read More</button>
+
+<div id="details">
+  <h3>About Me</h3>
+
+<p>
+Hello! My name is <b>Suman Kumar</b>. I am a passionate and dedicated Full Stack Web Development learner. I enjoy building modern, responsive, and user-friendly websites using HTML, CSS, JavaScript, and React.
+
+I have completed my BCA and am continuously improving my programming and web development skills by practicing coding every day and creating real-world projects.
+
+My technical skills include HTML, CSS, JavaScript, React, Java, Spring Boot, SQL, Git, and GitHub. I enjoy learning new technologies and solving programming problems.
+
+My goal is to become a professional Full Stack Java Developer and work in a reputed IT company where I can apply my technical knowledge, learn from experienced developers, and contribute to real-world software projects.
+
+Apart from coding, I like exploring new web technologies, improving my problem-solving skills, and working on personal projects to strengthen my practical experience. I believe that continuous learning and consistent practice are the keys to becoming a successful software developer.
+</p>
+
+<h3>Skills</h3>
+
+<ul>
+    <li>HTML5</li>
+    <li>CSS3</li>
+    <li>JavaScript (ES6)</li>
+    <li>React JS</li>
+    <li>Java</li>
+    <li>Spring Boot</li>
+    <li>SQL</li>
+    <li>Git & GitHub</li>
+    <li>Responsive Web Design</li>
+</ul>
+
+<h3>Education</h3>
+
+<p>
+Bachelor of Computer Applications (BCA)<br>
+Currently learning Full Stack Web Development.
+</p>
+
+<h3>Career Goal</h3>
+
+<p>
+To become a skilled Full Stack Java Developer by continuously learning modern technologies, building real-world applications, and contributing to innovative software development projects.
+</p>
+
+<h3>Contact</h3>
+
+<p>
+📧 Email: suman879618@gmail.com <br>
+📱 Phone: +91 7646003015 <br>
+📍 Location: New Delhi, India
+</p>
+</div>
+
+</div>
+
+<script>
+function showDetails() {
+    let details = document.getElementById("details");
+
+    if (details.style.display === "block") {
+        details.style.display = "none";
+    } else {
+        details.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>
