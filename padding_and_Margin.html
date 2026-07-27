@@ -5,52 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Profile</title>
 
-<style>
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-body{
-    background:#f2f2f2;
-    font-family:Arial, sans-serif;
-    padding:50px;
-}
-
-.card{
-    width:350px;
-    background:beige;
-    border:2px solid black;
-    margin:0px;
-    padding:20px;
-    border-radius:10px;
-}
-
-h2{
-    margin-bottom:15px;
-}
-
-p{
-    margin-bottom:15px;
-}
-
-button{
-    background:green;
-    color:white;
-    border: 2px solid black;
-    border-radius: 10px;
-    padding:10px 20px;
-    cursor:pointer;
-}
-
-#details{
-    display:none;
-    margin-top:20px;
-    border-top:1px solid gray;
-    padding-top:15px;
-}
-</style>
+<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -118,18 +73,6 @@ To become a skilled Full Stack Java Developer by continuously learning modern te
 </div>
 
 </div>
-
-<script>
-function showDetails() {
-    let details = document.getElementById("details");
-
-    if (details.style.display === "block") {
-        details.style.display = "none";
-    } else {
-        details.style.display = "block";
-    }
-}
-</script>
-
+<script src="index.js"></script>
 </body>
 </html>
