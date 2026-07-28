@@ -79,12 +79,13 @@ body{
     }
     p{
         margin-left: 20px;
-        width: 400px;
-        
+        width: auto;
+
       
     }
     img{
        float: right;
        margin: 25px;
+       padding: 20px;
       
     }
