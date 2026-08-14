@@ -1,0 +1,482 @@
+/* =========================================
+   RESET
+========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================
+   BODY
+========================================= */
+
+body {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    background: #d5d5d5;
+
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/* =========================================
+   MAIN POSTER
+========================================= */
+
+.poster {
+
+    width: 500px;
+
+    height: 500px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    background: #fffdf0;
+}
+
+
+/* =========================================
+   LEFT SECTION
+========================================= */
+
+.left {
+
+    width: 55%;
+
+    height: 100%;
+
+    position: absolute;
+
+    left: 0;
+
+    top: 0;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   TITLE
+========================================= */
+
+.left h1 {
+
+    position: absolute;
+
+    top: 105px;
+
+    left: 30px;
+
+    color: #30316e;
+
+    font-size: 27px;
+
+    font-weight: bold;
+
+    font-style: italic;
+
+    letter-spacing: 2px;
+
+    z-index: 20;
+}
+
+
+.left h1 sup {
+
+    font-size: 13px;
+
+    vertical-align: top;
+}
+
+
+/* =========================================
+   SUB TITLE
+========================================= */
+
+.left h2 {
+
+    position: absolute;
+
+    top: 138px;
+
+    left: 55px;
+
+    color: #30316e;
+
+    font-size: 10px;
+
+    font-style: italic;
+
+    letter-spacing: 1px;
+
+    z-index: 20;
+}
+
+
+/* =========================================
+   MESSAGE
+========================================= */
+
+.message {
+
+    position: absolute;
+
+    top: 168px;
+
+    left: 28px;
+
+    width: 195px;
+
+    color: #333;
+
+    font-size: 7px;
+
+    line-height: 1.5;
+
+    text-align: center;
+
+    font-weight: bold;
+
+    z-index: 20;
+}
+
+
+/* =========================================
+   ORANGE COLOR
+========================================= */
+
+.orange {
+
+    position: absolute;
+
+    width: 230px;
+
+    height: 110px;
+
+    left: -65px;
+
+    top: 185px;
+
+    background:
+        radial-gradient(
+            ellipse,
+            #ff4d16 0%,
+            #ff6425 45%,
+            rgba(255, 100, 30, 0.5) 65%,
+            transparent 80%
+        );
+
+    opacity: 0.9;
+
+    border-radius: 60% 45% 55% 40%;
+
+    transform: rotate(-15deg);
+
+    filter: blur(5px);
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   WHITE COLOR
+========================================= */
+
+.white {
+
+    position: absolute;
+
+    width: 240px;
+
+    height: 85px;
+
+    left: -65px;
+
+    top: 250px;
+
+    background: #ffffff;
+
+    opacity: 1;
+
+    border-radius: 60%;
+
+    transform: rotate(-15deg);
+
+    filter: blur(3px);
+
+    z-index: 3;
+}
+
+
+/* =========================================
+   GREEN COLOR
+========================================= */
+
+.green {
+
+    position: absolute;
+
+    width: 310px;
+
+    height: 125px;
+
+    left: -80px;
+
+    bottom: -20px;
+
+    background:
+        radial-gradient(
+            ellipse,
+            #219b3b 0%,
+            #35a84c 45%,
+            rgba(40, 160, 60, 0.55) 65%,
+            transparent 82%
+        );
+
+    opacity: 0.9;
+
+    border-radius: 60% 50% 45% 55%;
+
+    transform: rotate(-8deg);
+
+    filter: blur(6px);
+
+    z-index: 2;
+}
+
+
+/* =========================================
+   ASHOKA CHAKRA
+========================================= */
+
+.chakra {
+
+    width: 145px;
+
+    height: 145px;
+
+    position: absolute;
+
+    left: -58px;
+
+    bottom: 48px;
+
+    border: 8px solid #292d68;
+
+    border-radius: 50%;
+
+    z-index: 10;
+}
+
+
+/* Chakra Center */
+
+.chakra-center {
+
+    width: 27px;
+
+    height: 27px;
+
+    position: absolute;
+
+    left: 50%;
+
+    top: 50%;
+
+    transform: translate(-50%, -50%);
+
+    background: #292d68;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================
+   CHAKRA SPOKES
+========================================= */
+
+.line {
+
+    position: absolute;
+
+    width: 3px;
+
+    height: 65px;
+
+    left: 50%;
+
+    top: 50%;
+
+    margin-left: -1.5px;
+
+    margin-top: -65px;
+
+    background: #292d68;
+
+    transform-origin: center bottom;
+}
+
+
+.l1  { transform: rotate(0deg); }
+.l2  { transform: rotate(15deg); }
+.l3  { transform: rotate(30deg); }
+.l4  { transform: rotate(45deg); }
+.l5  { transform: rotate(60deg); }
+.l6  { transform: rotate(75deg); }
+.l7  { transform: rotate(90deg); }
+.l8  { transform: rotate(105deg); }
+.l9  { transform: rotate(120deg); }
+.l10 { transform: rotate(135deg); }
+.l11 { transform: rotate(150deg); }
+.l12 { transform: rotate(165deg); }
+.l13 { transform: rotate(180deg); }
+.l14 { transform: rotate(195deg); }
+.l15 { transform: rotate(210deg); }
+.l16 { transform: rotate(225deg); }
+.l17 { transform: rotate(240deg); }
+.l18 { transform: rotate(255deg); }
+.l19 { transform: rotate(270deg); }
+.l20 { transform: rotate(285deg); }
+.l21 { transform: rotate(300deg); }
+.l22 { transform: rotate(315deg); }
+.l23 { transform: rotate(330deg); }
+.l24 { transform: rotate(345deg); }
+
+
+/* =========================================
+   RIGHT SECTION
+========================================= */
+
+.right {
+
+    width: 50%;
+
+    height: 100%;
+
+    position: absolute;
+
+    right: 0;
+
+    top: 0;
+
+    z-index: 30;
+}
+
+
+/* =========================================
+   PHOTO FRAME
+========================================= */
+
+.photo-frame {
+
+    width: 242px;
+
+    height: 374px;
+
+    position: absolute;
+
+    top: 7px;
+
+    right: 5px;
+
+    background: #333478;
+
+    border: 3px solid #515e9d;
+
+    border-bottom-color: #d7865a;
+
+    border-radius: 50px;
+
+    overflow: hidden;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.my-photo {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 47px;
+}
+
+
+/* =========================================
+   NAME BOX
+========================================= */
+
+.name {
+
+    width: 296px;
+
+    height: 65px;
+
+    position: absolute;
+
+    top: 415px;
+
+    right: -1px;
+
+    background: #333478;
+
+    border: 3px solid #515e9d;
+
+    border-bottom-color: #d7865a;
+
+    border-radius: 30px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 18px;
+
+    font-style: italic;
+
+    letter-spacing: 3px;
+
+    z-index: 40;
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 520px) {
+
+    body {
+        background: #fffdf0;
+    }
+
+    .poster {
+
+        width: 100vw;
+
+        height: 100vw;
+    }
+}
